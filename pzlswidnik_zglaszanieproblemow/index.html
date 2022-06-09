@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>PZL-ŚWIDNIK Formularz zgłoszenia progblemu</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="src/Logo_Leonardo.svg.png" alt="Logo">
+        <h1>Formularz zgłoszenia problemu produkcyjnego</h1>
+    </div>
+    <div class="form">
+        <form action="https://formspree.io/f/myyovwag" method="POST">
+            <input id="reset" type="reset" value="Wyczyść formularz">
+            
+            <label for="indeks">Indeks:</label>
+            <input type="text" name="indeks" id="indeks" placeholder="Indeks detalu"> 
+
+            <label for="d-id">ID:</label>
+            <input type="text" name="id" id="d-id" placeholder="ID detalu"> 
+    
+
+            <label for="zglaszajacy">Zgłaszjący:</label>
+            <input type="text" name="zglaszajacy" id="zglaszajacy" placeholder="Imię i nazwisko">
+
+            <label for="numer-kontrolny">Numer kontrolny zgłaszającego:</label>
+            <input type="number" name="zglaszajacy-nr-kontrolny" id="numer-kontrolny" placeholder="Numer kontrolny">
+
+            <label for="wydzial">Wydział produkcyjny:</label> 
+            <select name="wydzial" id="wydzial">
+                <option value="W-360">W-360</option>
+                <option value="W-370">W-370</option>
+            </select>
+
+            <label for="czestotliwosc">Częstotliwość występowania problemu:</label> 
+            <select name="czestotliwosc" id="czestotliwosc">
+                <option value="pierwszy-raz">Pierwszy raz</option>
+                <option value="sporadycznie">Sporadycznie</option>
+                <option value="ciagle">Ciągle</option>
+                <option value="inne">Inne</option>
+            </select>
+
+            <label for="opis">Opis problemu:</label>
+            <textarea name="opis"></textarea>
+
+
+            <button type="submit">Wyślij zgłoszenie</button>
+            <input id="reset" type="reset" value="Wyczyść formularz">
+        </form>
+        <div class="inst">
+            <h2>Instrukcja wypełnienia formularza:</h2>
+            <ol>
+                <li>Indeks - wpisujemy indeks detalu.</li>
+                <li>ID - wpisujemy ID detalu.</li>
+                <li>Zgłaszający - wpisujemy imię i nazwisko zgłaszającego.</li>
+                <li>Numer kontrolny - wpisujemy numer kontrolny zgłaszającego.</li>
+                <li>Częstotliwość - jeżeli problem nie występował wcześniej wybieramy opcje pierwszy raz, jeżel problem występuję sporadycznie co któryś detal wybieramy opcje sporadycznie, jeżeli problem powtarza się cały czas wybieramy opcję ciągle, jeżeli zaś problem nie dotyczy powtarzalności a np. nie doszacowania czasu na wykonanie operacji itp. wybieramy opcje inne.</li>
+                <li>Opis problemu - szczegółowy opis zaistniałego problemu. Proszę opisywać problem wyczerpująco.</li>
+                <li>Jeżeli formularz został wypełniony proszę go jeszcze raz sprawdzić i kliknąć przycisk wyślij zgłoszenie.</li>
+                <li>Przycisk wyczyść formularz służy do czyszczenia pól formularza.</li>
+            </ol>
+        </div>
+    </div>
+    <footer>
+        <img src="src/nowelogo.png" alt="Creator logo">
+        <p>Created by Łukasz Woźniak for Leonardo PZL-ŚWIDNIK</p>
+    </footer>
+</body>
+</html>

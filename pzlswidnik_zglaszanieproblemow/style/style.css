@@ -1,0 +1,85 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  max-width: 500px;
+  max-height: 150px;
+}
+
+.form {
+  display: flex;
+  max-width: 100%;
+}
+
+.form #reset {
+  margin: 10px;
+}
+
+.form form {
+  background-color: #ffdaad;
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 49%;
+}
+
+.form form input {
+  background-color: #f8f8f8;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.form form label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.form form select {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.form form textarea {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 350px;
+}
+
+.form form button {
+  padding: 10px;
+}
+
+.form .inst {
+  background-color: #fdbf72;
+  width: 49%;
+  padding: 15px;
+}
+
+.form .inst ol li {
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  background-color: #d6d6d6;
+  font-size: 15px;
+  padding: 10px;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
+/*# sourceMappingURL=style.css.map */
